@@ -1,0 +1,31 @@
+/* © 2021 Copyright by Tiendatmagic */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#menu {
+  overflow: hidden;
+  width: 100%;
+  background-color: #444444;
+}
+
+#menu a {
+  display: block;
+  color: #fff;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 17px;
+}
+
+#menu a.active {
+  background-color: #4dca51;
+}
+
+.header p,
+.content p {
+  font-size: 20px;
+}
+/* © 2021 Copyright by Tiendatmagic */

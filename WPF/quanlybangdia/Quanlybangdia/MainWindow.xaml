@@ -1,0 +1,27 @@
+﻿<Window x:Class="quanlybangdia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLBDia"
+        mc:Ignorable="d"
+        Title="Quản lý băng đĩa" Height="436.3" Width="897.2" Loaded="Window_Loaded">
+    <Grid Margin="0,0,3.6,0">
+        <Label Content="Mã Băng Đĩa:" HorizontalAlignment="Left" Height="30" Margin="75,56,0,0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="txtBangdia" HorizontalAlignment="Left" Height="23" Margin="162,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Số Lượng:" HorizontalAlignment="Left" Height="30" Margin="311,56,0,0" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.441,4.577"/>
+        <TextBox x:Name="txtSoluong" HorizontalAlignment="Left" Height="23" Margin="375,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <Label Content="Tên Băng Đĩa:" HorizontalAlignment="Left" Height="30" Margin="569,56,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="txtTenbangdia" HorizontalAlignment="Left" Height="23" Margin="662,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.498,0.46"/>
+        <GroupBox  HorizontalAlignment="Left" Height="81" Margin="33,121,0,0" VerticalAlignment="Top" Width="826"/>
+        <Button x:Name="btnNhap" Content="Nhập" HorizontalAlignment="Left" Height="45" Margin="177,138,0,0" VerticalAlignment="Top" Width="104" Click="btnNhap_Click" FontSize="16"/>
+        <Button x:Name="btnSua" Content="Sửa" HorizontalAlignment="Left" Height="45" Margin="329,138,0,0" VerticalAlignment="Top" Width="104" Click="btnSua_Click" FontSize="16"/>
+        <Button x:Name="btnXoa" Content="Xóa" HorizontalAlignment="Left" Height="45" Margin="482,138,0,0" VerticalAlignment="Top" Width="106" Click="btnXoa_Click" FontSize="16"/>
+        <Button x:Name="btnThoat" Content="Thoát" HorizontalAlignment="Left" Height="45" Margin="632,138,0,0" VerticalAlignment="Top" Width="97" Click="btnThoat_Click" FontSize="16"/>
+        <GroupBox Header="Nhập thông tin băng đĩa" HorizontalAlignment="Left" Height="79" Margin="33,24,0,0" VerticalAlignment="Top" Width="826"/>
+        <GroupBox Header="Thông tin chi tiết băng đĩa" HorizontalAlignment="Left" Height="176" Margin="33,216,0,0" VerticalAlignment="Top" Width="826">
+            <DataGrid x:Name="dataGridView1" HorizontalAlignment="Left" Height="132" Margin="9,10,0,0" VerticalAlignment="Top" Width="790" SelectionChanged="dataGridView1_SelectionChanged"/>
+        </GroupBox>
+
+    </Grid>
+</Window>
